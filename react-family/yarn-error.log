@@ -1,0 +1,32 @@
+Arguments: 
+  D:\Program Files\nodejs\node.exe D:\Program Files (x86)\Yarn\bin\yarn.js init
+
+PATH: 
+  C:\Users\Mr.Z\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Mr.Z\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;D:\Program Files\nodejs;D:\Program Files (x86)\Yarn\bin;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Users\Mr.Z\AppData\Local\Microsoft\WindowsApps;D:\Program Files\Microsoft VS Code\bin;C:\Users\Mr.Z\AppData\Roaming\npm;C:\Users\Mr.Z\AppData\Local\Yarn\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  0.27.5
+
+Node version: 
+  8.7.0
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Can't answer a question unless a user TTY
+      at ConsoleReporter.question (D:\Program Files (x86)\Yarn\lib\yarn-cli.js:81327:59)
+      at Object.<anonymous> (D:\Program Files (x86)\Yarn\lib\yarn-cli.js:76832:38)
+      at Generator.next (<anonymous>)
+      at step (D:\Program Files (x86)\Yarn\lib\yarn-cli.js:91:30)
+      at D:\Program Files (x86)\Yarn\lib\yarn-cli.js:102:13
+      at <anonymous>
