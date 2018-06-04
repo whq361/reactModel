@@ -1,4 +1,5 @@
 import React from 'react';
+import {AppContainer ,hot } from 'react-hot-loader';
 
 import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
 
@@ -21,4 +22,5 @@ const getRouter = () => (
     </Router>
 );
 
-export default getRouter;
+// export default getRouter;
+export default hot(module)(getRouter);
