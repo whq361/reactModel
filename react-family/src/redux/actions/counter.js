@@ -1,5 +1,5 @@
 /*action*/
-import {INCREMENT, DECREMENT, RESET} from '../actions/counter';
+// import {INCREMENT, DECREMENT, RESET} from '../actions/counter';
 export const INCREMENT = "counter/INCREMENT";
 export const DECREMENT = "counter/DECREMENT";
 export const RESET = "counter/RESET";

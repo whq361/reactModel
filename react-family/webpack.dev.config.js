@@ -1,7 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 module.exports = {
- 
+    devtool: 'inline-source-map',
     /*入口*/
     entry: [
         'react-hot-loader/patch',
@@ -20,24 +20,37 @@ module.exports = {
 	         test: /\.js$/,
 	         use: ['babel-loader?cacheDirectory=true'],
 	         include: path.join(__dirname, 'src')
-	     }]
+         },
+         {
+            test: /\.css$/,
+            use: ['style-loader', 'css-loader']
+         },
+         {
+            test: /\.(png|jpg|gif)$/,
+            use: [{
+                loader: 'url-loader',
+                options: {
+                    limit: 8192
+                }
+            }]
+        }
+        ]
 	 },
 	 devServer: {
         contentBase: path.join(__dirname, './dist'),
         historyApiFallback: true,    
         open:true,
+        port:3000,
         inline: true,    
-        hot: true, 
-        proxy: {
-	      "/api": "http://localhost:3000"
-	    }
+        hot: true
     },
      resolve: {
             alias: {
                 pages: path.join(__dirname, 'src/pages'),
                 component: path.join(__dirname, 'src/component'),
                 router: path.join(__dirname, 'src/router'),
-                redux: path.join(__dirname, 'src/redux')
+                actions: path.join(__dirname, 'src/redux/actions'),
+                reducers: path.join(__dirname, 'src/redux/reducers')
             }
     },
 	plugins:[

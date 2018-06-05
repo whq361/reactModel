@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
 
+import './Page1.css';
+
 export default class Page1 extends Component {
     render() {
         return (
-            <div>
-                this is Page1~1123123123
+            <div className="page-box">
+                this is page1~
             </div>
         )
     }
