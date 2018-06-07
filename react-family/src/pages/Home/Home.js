@@ -10,7 +10,7 @@ export default class Home extends Component {
 
   _handleClick() {
     this.setState({
-      count: ++this.state.count
+      count: this.state.count + 1
     });
   }
 

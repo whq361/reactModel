@@ -1,5 +1,5 @@
 Arguments: 
-  D:\Program Files\nodejs\node.exe D:\Program Files (x86)\Yarn\bin\yarn.js add extract-text-webpack-plugin --save
+  D:\Program Files\nodejs\node.exe D:\Program Files (x86)\Yarn\bin\yarn.js add extract-webpack-plugin@next --save
 
 PATH: 
   C:\Users\Mr.Z\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Mr.Z\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;D:\Program Files\nodejs;D:\Program Files (x86)\Yarn\bin;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Users\Mr.Z\AppData\Local\Microsoft\WindowsApps;D:\Program Files\Microsoft VS Code\bin;C:\Users\Mr.Z\AppData\Roaming\npm;C:\Users\Mr.Z\AppData\Local\Yarn\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
@@ -42,6 +42,7 @@ npm manifest:
       "bundle-loader": "^0.5.6",
       "clean-webpack-plugin": "^0.1.19",
       "css-loader": "^0.28.11",
+      "extract-text-webpack-plugin": "^3.0.2",
       "file-loader": "^1.1.11",
       "html-webpack-plugin": "^3.2.0",
       "react": "^16.4.0",
@@ -239,6 +240,15 @@ Lockfile:
     version "3.2.0"
     resolved "https://registry.yarnpkg.com/ajv-keywords/-/ajv-keywords-3.2.0.tgz#e86b819c602cf8821ad637413698f1dec021847a"
   
+  ajv@^5.0.0:
+    version "5.5.2"
+    resolved "https://registry.yarnpkg.com/ajv/-/ajv-5.5.2.tgz#73b5eeca3fab653e3d3f9422b341ad42205dc965"
+    dependencies:
+      co "^4.6.0"
+      fast-deep-equal "^1.0.0"
+      fast-json-stable-stringify "^2.0.0"
+      json-schema-traverse "^0.3.0"
+  
   ajv@^6.1.0:
     version "6.5.0"
     resolved "https://registry.yarnpkg.com/ajv/-/ajv-6.5.0.tgz#4c8affdf80887d8f132c9c52ab8a2dc4d0b7b24c"
@@ -415,7 +425,7 @@ Lockfile:
     version "1.5.2"
     resolved "https://registry.yarnpkg.com/async/-/async-1.5.2.tgz#ec6a61ae56480c0c3cb241c95618e20892f9672a"
   
-  async@^2.6.0:
+  async@^2.4.1, async@^2.6.0:
     version "2.6.1"
     resolved "https://registry.yarnpkg.com/async/-/async-2.6.1.tgz#b245a23ca71930044ec53fa46aa00a3e87c6a610"
     dependencies:
@@ -1576,6 +1586,10 @@ Lockfile:
       process-nextick-args "^2.0.0"
       readable-stream "^2.3.5"
   
+  co@^4.6.0:
+    version "4.6.0"
+    resolved "https://registry.yarnpkg.com/co/-/co-4.6.0.tgz#6ea6bdf3d853ae54ccb8e47bfa0bf3f9031fb184"
+  
   coa@~1.0.1:
     version "1.0.4"
     resolved "https://registry.yarnpkg.com/coa/-/coa-1.0.4.tgz#a9ef153660d6a86a8bdec0289a5c684d217432fd"
@@ -2462,6 +2476,19 @@ Lockfile:
       regex-not "^1.0.0"
       snapdragon "^0.8.1"
       to-regex "^3.0.1"
+  
+  extract-text-webpack-plugin@^3.0.2:
+    version "3.0.2"
+    resolved "https://registry.yarnpkg.com/extract-text-webpack-plugin/-/extract-text-webpack-plugin-3.0.2.tgz#5f043eaa02f9750a9258b78c0a6e0dc1408fb2f7"
+    dependencies:
+      async "^2.4.1"
+      loader-utils "^1.1.0"
+      schema-utils "^0.3.0"
+      webpack-sources "^1.0.1"
+  
+  fast-deep-equal@^1.0.0:
+    version "1.1.0"
+    resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-1.1.0.tgz#c053477817c86b51daa853c81e059b733d023614"
   
   fast-deep-equal@^2.0.1:
     version "2.0.1"
@@ -5526,6 +5553,12 @@ Lockfile:
     version "1.2.4"
     resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   
+  schema-utils@^0.3.0:
+    version "0.3.0"
+    resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-0.3.0.tgz#f5877222ce3e931edae039f17eb3716e7137f8cf"
+    dependencies:
+      ajv "^5.0.0"
+  
   schema-utils@^0.4.3, schema-utils@^0.4.4, schema-utils@^0.4.5:
     version "0.4.5"
     resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-0.4.5.tgz#21836f0608aac17b78f9e3e24daff14a5ca13a3e"
@@ -6677,7 +6710,14 @@ Lockfile:
       yeoman-environment "^2.0.5"
 
 Trace: 
-  Error: connect ETIMEDOUT 104.18.95.96:443
-      at Object._errnoException (util.js:1021:11)
-      at _exceptionWithHostPort (util.js:1043:20)
-      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1175:14)
+  Error: https://registry.yarnpkg.com/extract-webpack-plugin: Not found
+      at Request.params.callback [as _callback] (D:\Program Files (x86)\Yarn\lib\yarn-cli.js:58200:18)
+      at Request.self.callback (D:\Program Files (x86)\Yarn\lib\yarn-cli.js:114242:22)
+      at emitTwo (events.js:125:13)
+      at Request.emit (events.js:213:7)
+      at Request.<anonymous> (D:\Program Files (x86)\Yarn\lib\yarn-cli.js:115225:10)
+      at emitOne (events.js:115:13)
+      at Request.emit (events.js:210:7)
+      at IncomingMessage.<anonymous> (D:\Program Files (x86)\Yarn\lib\yarn-cli.js:115145:12)
+      at Object.onceWrapper (events.js:314:30)
+      at emitNone (events.js:110:20)
