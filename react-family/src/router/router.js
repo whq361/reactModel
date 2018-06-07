@@ -18,18 +18,26 @@ const createComponent = component => props => (
 );
 
 const getRouter = () => (
-  <Router>
-    <div>
-      <Switch>
-        <Route exact path="/" component={createComponent(Home)} />
-        <Route path="/page1" component={createComponent(Page1)} />
-        <Route path="/counter" component={createComponent(Counter)} />
-        <Route path="/userinfo" component={createComponent(UserInfo)} />
-        <Route component={createComponent(NotFound)} />
-      </Switch>
-    </div>
-  </Router>
+  <div>
+    <Switch>
+      <Route exact path="/" component={createComponent(Home)} />
+      <Route path="/page1" component={createComponent(Page1)} />
+      <Route path="/counter" component={createComponent(Counter)} />
+      <Route path="/userinfo" component={createComponent(UserInfo)} />
+      <Route component={createComponent(NotFound)} />
+    </Switch>
+  </div>
 );
 
-// export default hot(module)(getRouter);
 export default getRouter;
+// export default () => (
+//   <div>
+//     <Switch>
+//       <Route exact path="/" component={createComponent(Home)} />
+//       <Route path="/page1" component={createComponent(Page1)} />
+//       <Route path="/counter" component={createComponent(Counter)} />
+//       <Route path="/userinfo" component={createComponent(UserInfo)} />
+//       <Route component={createComponent(NotFound)} />
+//     </Switch>
+//   </div>
+// );

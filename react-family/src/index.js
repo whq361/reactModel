@@ -8,12 +8,12 @@ import App from "components/App/App";
 
 renderWithHotReload(App);
 
-if (module.hot) {
-  module.hot.accept("components/App/App", () => {
-    const NextApp = require("components/App/App").default;
-    renderWithHotReload(NextApp);
-  });
-}
+// if (module.hot) {
+//   module.hot.accept("components/App/App", () => {
+//     const NextApp = require("components/App/App").default;
+//     renderWithHotReload(NextApp);
+//   });
+// }
 
 function renderWithHotReload(RootElement) {
   ReactDom.render(
