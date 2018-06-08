@@ -1,5 +1,9 @@
 Arguments: 
+<<<<<<< HEAD
   C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add
+=======
+  D:\Program Files\nodejs\node.exe D:\Program Files (x86)\Yarn\bin\yarn.js add extract-webpack-plugin@next --save
+>>>>>>> f792d11914b6ac13bd05b5ae8116a97df9d43ea2
 
 PATH: 
   C:\Users\Mr.Z\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Mr.Z\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\nodejs;C:\Program Files (x86)\Yarn\bin;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Users\Mr.Z\AppData\Local\Microsoft\WindowsApps;C:\Users\Mr.Z\AppData\Roaming\npm;D:\Program Files\Microsoft VS Code\bin;C:\Users\Mr.Z\AppData\Local\Yarn\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
@@ -6710,6 +6714,7 @@ Lockfile:
       yeoman-environment "^2.0.5"
 
 Trace: 
+<<<<<<< HEAD
   Error: Missing list of packages to add to your project.
       at new MessageError (C:\Program Files (x86)\Yarn\lib\cli.js:186:110)
       at Object.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:40587:13)
@@ -6721,3 +6726,16 @@ Trace:
       at Object.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:95:12)
       at Object.run (C:\Program Files (x86)\Yarn\lib\cli.js:40599:19)
       at run (C:\Program Files (x86)\Yarn\lib\cli.js:89113:20)
+=======
+  Error: https://registry.yarnpkg.com/extract-webpack-plugin: Not found
+      at Request.params.callback [as _callback] (D:\Program Files (x86)\Yarn\lib\yarn-cli.js:58200:18)
+      at Request.self.callback (D:\Program Files (x86)\Yarn\lib\yarn-cli.js:114242:22)
+      at emitTwo (events.js:125:13)
+      at Request.emit (events.js:213:7)
+      at Request.<anonymous> (D:\Program Files (x86)\Yarn\lib\yarn-cli.js:115225:10)
+      at emitOne (events.js:115:13)
+      at Request.emit (events.js:210:7)
+      at IncomingMessage.<anonymous> (D:\Program Files (x86)\Yarn\lib\yarn-cli.js:115145:12)
+      at Object.onceWrapper (events.js:314:30)
+      at emitNone (events.js:110:20)
+>>>>>>> f792d11914b6ac13bd05b5ae8116a97df9d43ea2
